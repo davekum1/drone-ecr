@@ -1,0 +1,23 @@
+#Drone CI File!
+#Commit Message: Drone! Captain Canary is here! 
+
+kind: pipeline
+type: docker
+name: default
+
+steps:
+
+- name: build
+  image: golang:1.13
+  commands:
+    - "go build -o ./myapp"
+
+- name: publish  
+  image: plugins/ecr
+  settings:
+    access_key:
+      from_secret: aws_access_key_id
+    secret_key:
+      from_secret: aws_secret_access_key
+    repo: davekum1/drone
+    registry: <account_id>.dkr.ecr.us-east-1.amazonaws.com
