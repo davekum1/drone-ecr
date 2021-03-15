@@ -2,6 +2,8 @@
 #Commit Message: Drone! Captain Canary is here! 
 #Add new message
 #add second message
+#add third message
+
 
 kind: pipeline
 type: docker
