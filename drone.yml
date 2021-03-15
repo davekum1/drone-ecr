@@ -4,7 +4,6 @@
 #add second message
 
 kind: pipeline
-type: docker
 name: default
 
 steps:
