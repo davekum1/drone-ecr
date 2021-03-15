@@ -21,4 +21,4 @@ steps:
     secret_key:
       from_secret: aws_secret_access_key
     repo: davekum1/drone
-    registry: <account_id>.dkr.ecr.us-east-1.amazonaws.com
+    registry: 536106463160.dkr.ecr.us-east-2.amazonaws.com
