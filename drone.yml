@@ -1,7 +1,6 @@
 #Drone CI File!
 #Commit Message: Drone! Captain Canary is here! 
 #Add new message
-#add second message
 
 kind: pipeline
 name: default
