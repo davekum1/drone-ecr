@@ -19,6 +19,7 @@ steps:
       from_secret: aws_access_key_id
     secret_key:
       from_secret: aws_secret_access_key
-    repo: davekum1/drone
+    create_repository: true
+    repo: drone
     registry: 536106463160.dkr.ecr.us-east-2.amazonaws.com
 
