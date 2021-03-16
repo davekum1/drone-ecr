@@ -9,10 +9,6 @@ steps:
   commands:
     - "go build -o ./myapp"
 
-  environment:
-    AWS_ACCOUNT_ID:
-      from_secret: aws_account_id
-
 - name: publish  
   image: plugins/ecr
   settings:
