@@ -12,12 +12,14 @@ steps:
 - name: publish  
   image: plugins/ecr
   settings:
+    aws_account_id:
+      from_secret: aws_account_id
     access_key:
       from_secret: aws_access_key_id
     secret_key:
       from_secret: aws_secret_access_key
     create_repository: true
-    repo: <account_id>.dkr.ecr.us-east-2.amazonaws.com/sample/drone
-    registry: <account_id>.dkr.ecr.us-east-2.amazonaws.com
+    repo: ${aws_account_id}.dkr.ecr.us-east-2.amazonaws.com/sample/drone
+    registry: ${aws_account_id}.dkr.ecr.us-east-2.amazonaws.com
     region: us-east-2
 
