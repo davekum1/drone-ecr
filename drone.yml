@@ -20,6 +20,6 @@ steps:
       from_secret: aws_secret_access_key
     create_repository: true
     repo: 536106463160.dkr.ecr.us-east-2.amazonaws.com/sample/drone
-    registry: 536106463160.dkr.ecr.us-east-2.amazonaws.com
+#    registry: 536106463160.dkr.ecr.us-east-2.amazonaws.com
     region: us-east-2
 
