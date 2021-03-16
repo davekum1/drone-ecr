@@ -12,14 +12,14 @@ steps:
 - name: publish  
   image: plugins/ecr
   settings:
-    aws_account_id:
-      from_secret: aws_account_id
+    #This need to be defined in drone secret configuration through Drone UI
     access_key:
       from_secret: aws_access_key_id
     secret_key:
       from_secret: aws_secret_access_key
     create_repository: true
-    repo: 536106463160.dkr.ecr.us-east-2.amazonaws.com/sample/drone
-#    registry: 536106463160.dkr.ecr.us-east-2.amazonaws.com
+    #You will need to change <account Id> below with your AWS accountId
+    repo: <enter your aws account Id here>.dkr.ecr.us-east-2.amazonaws.com/sample/drone
+    #This is optional. By the default, it will read from aws profile in your drone server. This is to overwrite
     region: us-east-2
 
