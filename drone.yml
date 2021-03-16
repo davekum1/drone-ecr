@@ -1,12 +1,9 @@
-#Drone CI File!
-#Commit Message: Drone! Captain Canary is here! 
-#Add new messa
+#drone yml 
 
 kind: pipeline
 name: default
 
 steps:
-
 - name: build
   image: golang:1.13
   commands:
