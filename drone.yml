@@ -7,7 +7,7 @@ steps:
 - name: build
   image: golang:1.13
   commands:
-    - "go build -o /bin/HelloWorld"
+    - "go build -o ./myapp"
 
 - name: publish  
   image: plugins/ecr
