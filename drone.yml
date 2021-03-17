@@ -1,4 +1,4 @@
-#drone yml 
+#drone yml example
 
 kind: pipeline
 name: default
