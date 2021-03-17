@@ -1,4 +1,5 @@
 #drone yml example
+#added new comment
 
 kind: pipeline
 name: default
